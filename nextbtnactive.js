@@ -9,7 +9,7 @@ function updateButton() {
   const nextButton = document.getElementById("nextButton");
  
   if (seatSelected && phoneInput) {
-    nextButton.style.backgroundColor = "green";
+    nextButton.style.backgroundColor = "#1DD100";
     nextButton.disabled = false;
   } else {
     nextButton.style.backgroundColor = "gray";

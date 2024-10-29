@@ -78,7 +78,7 @@ function updateSeatInfo() {
 //toggle the Apply button based on seat selection
 function toggleApplyButton() {
   if (selectedSeats.length === maxSeats) {
-    applyButton.style.backgroundColor = 'green';
+    applyButton.style.backgroundColor = '#1DD100';
     applyButton.disabled = false;
   } else {
     applyButton.style.backgroundColor = 'gray';
@@ -105,11 +105,11 @@ function applyDiscount() {
 }
 
 
-// Function to update the grand total
+//update the grand total
 function updateGrandTotal() {
   grandTotal = totalPrice - discountAmount;
   grandTotalPrice.textContent = `BDT ${grandTotal}`;
 }
 
-// Event listener for Apply button to apply discount
+//Apply button to apply discount
 applyButton.addEventListener('click', applyDiscount);
