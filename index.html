@@ -16,84 +16,78 @@
   </head>
   <body>
 <main>
-  <!-- navBar -->
-<div class="navbar bg-base-100">
-      <div class="navbar-start">
-       <a class="text-xl text-black font-bold">Akota-Ticket</a>
-      </div>
-      <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal px-1">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Destination</a></li>
-          <li><a href="#">Search</a></li>
-        </ul>
-      </div>
-      <div class="navbar-end">
-        <a class="btn border-[#1DD142] bg-[#1DD1001A] font-bold"
-          >Bus
-          <img src="/images/bus-icon.png" alt="" />
-        </a>
+<!-- Navbar -->
+<div class="navbar bg-base-100 p-4">
+  <div class="navbar-start">
+    <a class="text-2xl text-black font-bold">P-Ticket</a>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1 space-x-4">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Destination</a></li>
+      <li><a href="#">Search</a></li>
+    </ul>
+  </div>
+  <div class="navbar-end">
+    <a class="btn border-[#1DD142] bg-[#1DD1001A] font-bold flex items-center">
+      Bus
+      <img class="ml-2" src="/images/bus-icon.png" alt="Bus Icon" />
+    </a>
+  </div>
+</div>
+
+<!-- Banner Section -->
+<section class="bg-no-repeat bg-center min-h-screen py-8">
+  <div class="flex flex-col items-center justify-center text-center bg-gray-100">
+    <div class="relative bg-cover bg-center h-[500px] w-full max-w-4xl rounded-lg overflow-hidden shadow-lg"
+         style="background-image: url('images/banner.png');">
+      <!-- Overlay with main content -->
+      <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
+        <h1 class="text-6xl font-bold text-white font-Raleway mb-2">End-to-End Travel with</h1>
+        <h1 class="text-6xl font-bold text-[#1DD142] font-Raleway pb-4">P Paribahan</h1>
+        <p class="text-white font-Inter pb-6 max-w-xl">
+          Yes, you can run unit tests and view the results directly within the app.
+          The integrated testing features allow for a streamlined experience.
+        </p>
+        <button class="btn bg-[#1DD142] text-black px-8 py-3 rounded-lg font-bold">Buy Tickets</button>
       </div>
     </div>
-  </div> 
-        <!-- Banner -->
-           <section class=" bg-no-repeat bg-center min-h-screen min-w-fit">
-           <div class="bg-gray-100 items-center justify-center">
-            <div class="relative bg-cover bg-center h-[500px] w-full max-w-5xl rounded-lg overflow-hidden shadow-lg" style="background-image: url('images/banner.png');">
 
-            <!-- Overlay with main content -->
-            <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
-              <h1 class="text-7xl font-bold text-white  font-Raleway">End-to-End Travel with </h1>
-              <h1 class="text-7xl font-bold text-[#1DD142] font-Raleway pb-6"> P Paribahan</h1>
-              <p class="text-white font-Inter pb-6">Yes, you can run unit tests and view the results directly within the app.
-                The integrated testing features allow for a streamlined .</p>
-                <button class="btn-buy rounded-xl p-4 text-black font-bold">Buy Tickets</button>
-            </div>
-            </div>
-        
-          <!-- cards overlapping -->
-          <div class="relative flex justify-center space-x-4 -mt-12">
-            <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center border-b-4 border-[#1DD100] w-30">
-            <div class="flex ">
-              <div>
-                <img class="h-10 w-10 mt-4 mx-2" src="/images/people.png" alt="">
-              </div>
-             <div>
-              <div class="text-black text-3xl font-bold">500K+</div>
-              <div class="text-gray-700 font-medium mt-2">Registered users</div>
-             </div>
-            </div>
-            </div>
-            <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center border-b-4 border-[#1DD100] w-30">
-              <div class="flex ">
-                <div>
-                  <img class="h-10 w-10 mt-4 mx-2" src="/images/ticket-cupon.png" alt="">
-                </div>
-               <div>
-                <div class="text-black text-3xl font-bold">1.7 Lacks</div>
-                <div class="text-gray-700 font-medium mt-2">Tickets sold</div>
-               </div>
-              </div>
-            </div>
-            <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center border-b-4 border-[#1DD100] w-30">
-              <div class="flex ">
-                <div>
-                  <img class="h-10 w-10 mt-4 mx-2" src="/images/stoppage.png" alt="">
-                </div>
-               <div>
-                <div class="text-black text-3xl font-bold">80K+</div>
-                <div class="text-gray-700 font-medium mt-2">Rental partners</div>
-               </div>
-              </div>
-            </div>
-          </div>
+    <!-- Information Cards with Overlapping Effect -->
+    <div class="relative flex justify-center space-x-4 -mt-12 max-w-4xl w-full px-4">
+      <div class="bg-white rounded-xl shadow-lg p-6 flex items-center space-x-4 border-b-4 border-[#1DD100]">
+        <img class="h-10 w-10" src="/images/people.png" alt="Registered users">
+        <div>
+          <div class="text-black text-2xl font-bold">500K+</div>
+          <div class="text-gray-700 text-sm">Registered users</div>
         </div>
-        </section>
+      </div>
+      <div class="bg-white rounded-xl shadow-lg p-6 flex items-center space-x-4 border-b-4 border-[#1DD100]">
+        <img class="h-10 w-10" src="/images/ticket-cupon.png" alt="Tickets sold">
+        <div>
+          <div class="text-black text-2xl font-bold">1.7 Lacks</div>
+          <div class="text-gray-700 text-sm">Tickets sold</div>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl shadow-lg p-6 flex items-center space-x-4 border-b-4 border-[#1DD100]">
+        <img class="h-10 w-10" src="/images/stoppage.png" alt="Rental partners">
+        <div>
+          <div class="text-black text-2xl font-bold">80K+</div>
+          <div class="text-gray-700 text-sm">Rental partners</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- offer -->
-<section class="container mx-auto mt-10">
+<div class="mx-auto">
+  <h1 class="text-black font-bold items-center text-center text-3xl">Best offers for you</h1>
+</div>
   <!-- main container  -->
-  <div class="flex gap-7 mx-auto justify-center">
+<section class="container mx-auto mt-10">
+<div class="flex gap-7 mx-auto justify-center">
     <!-- 1st div  -->
     <div class="flex">
       <div class="card w-96 bg-[#FFBF0F] text-neutral-content text-black">
@@ -246,83 +240,83 @@
           <div class="grid grid-cols-6 gap-4">
              <!-- Row A -->
       <div class="flex justify-center items-center font-bold">A</div>
-      <button class="seat seat-available">A1</button>
-      <button class="seat seat-available">A2</button>
+      <button class="seat seat-available" onclick="selectSeat()">A1</button>
+      <button class="seat seat-available"onclick="selectSeat()">A2</button>
       <div class="w-6"></div> 
-      <button class="seat seat-available">A3</button>
-      <button class="seat seat-available">A4</button>
+      <button class="seat seat-available"onclick="selectSeat()">A3</button>
+      <button class="seat seat-available"onclick="selectSeat()">A4</button>
 
       <!-- Row B -->
       <div class="flex justify-center items-center font-bold">B</div>
-      <button class="seat seat-available">B1</button>
-      <button class="seat seat-available">B2</button>
+      <button class="seat seat-available"onclick="selectSeat()">B1</button>
+      <button class="seat seat-available"onclick="selectSeat()">B2</button>
       <div class="w-6"></div> 
-      <button class="seat seat-available">B3</button>
-      <button class="seat seat-available">B4</button>
+      <button class="seat seat-available"onclick="selectSeat()">B3</button>
+      <button class="seat seat-available"onclick="selectSeat()">B4</button>
             
   <!-- Row C -->
   <div class="flex justify-center items-center font-bold">C</div>
-  <button class="seat seat-available">C1</button>
-  <button class="seat seat-available">C2</button>
+  <button class="seat seat-available"onclick="selectSeat()">C1</button>
+  <button class="seat seat-available"onclick="selectSeat()">C2</button>
   <div class="w-6"></div> 
-  <button class="seat seat-available">C3</button>
-  <button class="seat seat-available">C4</button>
+  <button class="seat seat-available"onclick="selectSeat()">C3</button>
+  <button class="seat seat-available"onclick="selectSeat()">C4</button>
 
   <!-- Row D -->
   <div class="flex justify-center items-center font-bold">D</div>
-  <button class="seat seat-available">D1</button>
-  <button class="seat seat-available">D2</button>
+  <button class="seat seat-available"onclick="selectSeat()">D1</button>
+  <button class="seat seat-available"onclick="selectSeat()">D2</button>
   <div class="w-6"></div> 
-  <button class="seat seat-available">D3</button>
-  <button class="seat seat-available">D4</button>
+  <button class="seat seat-available"onclick="selectSeat()">D3</button>
+  <button class="seat seat-available"onclick="selectSeat()">D4</button>
             
   <!-- Row E -->
   <div class="flex justify-center items-center font-bold">E</div>
-  <button class="seat seat-available">E1</button>
-  <button class="seat seat-available">E2</button>
+  <button class="seat seat-available"onclick="selectSeat()">E1</button>
+  <button class="seat seat-available"onclick="selectSeat()">E2</button>
   <div class="w-6"></div> 
-  <button class="seat seat-available">E3</button>
-  <button class="seat seat-available">E4</button>
+  <button class="seat seat-available"onclick="selectSeat()">E3</button>
+  <button class="seat seat-available"onclick="selectSeat()">E4</button>
 
   <!-- Row F -->
   <div class="flex justify-center items-center font-bold">F</div>
-  <button class="seat seat-available">F1</button>
-  <button class="seat seat-available">F2</button>
+  <button class="seat seat-available"onclick="selectSeat()">F1</button>
+  <button class="seat seat-available"onclick="selectSeat()">F2</button>
   <div class="w-6"></div> 
-  <button class="seat seat-available">F3</button>
-  <button class="seat seat-available">F4</button>
+  <button class="seat seat-available"onclick="selectSeat()">F3</button>
+  <button class="seat seat-available"onclick="selectSeat()">F4</button>
   
      <!-- Row G -->
      <div class="flex justify-center items-center font-bold">G</div>
-     <button class="seat seat-available">G1</button>
-     <button class="seat seat-available">G2</button>
+     <button class="seat seat-available"onclick="selectSeat()">G1</button>
+     <button class="seat seat-available"onclick="selectSeat()">G2</button>
      <div class="w-6"></div> 
-     <button class="seat seat-available">G3</button>
-     <button class="seat seat-available">G4</button>
+     <button class="seat seat-available"onclick="selectSeat()">G3</button>
+     <button class="seat seat-available"onclick="selectSeat()">G4</button>
 
      <!-- Row H -->
      <div class="flex justify-center items-center font-bold">H</div>
-     <button class="seat seat-available">H1</button>
-     <button class="seat seat-available">H2</button>
-     <div class="w-6"></div> 
-     <button class="seat seat-available">H3</button>
-     <button class="seat seat-available">H4</button>
+     <button class="seat seat-available"onclick="selectSeat()">H1</button>
+     <button class="seat seat-available"onclick="selectSeat()">H2</button>
+     <div class="w-6"></div>
+     <button class="seat seat-available"onclick="selectSeat()">H3</button>
+     <button class="seat seat-available"onclick="selectSeat()">H4</button>
 
        <!-- Row I -->
        <div class="flex justify-center items-center font-bold">I</div>
-       <button class="seat seat-available">I1</button>
-       <button class="seat seat-available">I2</button>
+       <button class="seat seat-available"onclick="selectSeat()">I1</button>
+       <button class="seat seat-available"onclick="selectSeat()">I2</button>
        <div class="w-6"></div> 
-       <button class="seat seat-available">I3</button>
-       <button class="seat seat-available">I4</button>
+       <button class="seat seat-available"onclick="selectSeat()">I3</button>
+       <button class="seat seat-available"onclick="selectSeat()">I4</button>
  
        <!-- Row J -->
        <div class="flex justify-center items-center font-bold">J</div>
-       <button class="seat seat-available">J1</button>
-       <button class="seat seat-available">J2</button>
-       <div class="w-6"></div> 
-       <button class="seat seat-available">J3</button>
-       <button class="seat seat-available">J4</button>
+       <button class="seat seat-available"onclick="selectSeat()">J1</button>
+       <button class="seat seat-available"onclick="selectSeat()">J2</button>
+       <div class="w-6"></div>
+       <button class="seat seat-available"onclick="selectSeat()">J3</button>
+       <button class="seat seat-available"onclick="selectSeat()">J4</button>
           </div>
         </div>
         
@@ -376,25 +370,23 @@
               <p class="mb-3 font-bold">Email ID</p>
               <input type="email" placeholder="Enter your email id" class="input input-bordered w-full mb-4">
 
-              <!-- Next Button to Show the Modal -->
+<!-- Next Button to Show the Modal -->
 <div class="flex justify-center mt-3">
-  <button  id="nextButton" disabled onclick="showModal()" class="btn w-[80%] bg-[#1DD100] text-white">Next</button>
-
+  <button id="nextButton" disabled onclick="showModal()" class="btn w-[80%] bg-[#1DD100] text-white">Next</button>
 </div>
 
 <!-- Modal Box (Dialog) -->
-<section id="submit" class="container mx-auto hidden justify-center">
-  <div class="bg-white rounded-lg shadow-md flex flex-col justify-center items-center text-center">
-    <img src="images/success.png" alt="Success">
-    <h1 class="text-green-700 font-extrabold text-2xl mt-2">SUCCESS</h1>
-    <p class="w-[561px] text-black font-semibold">Thank you for Booking Our Bus Seats. 
+<section id="submit" class="hidden fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+  <div class="bg-white rounded-lg shadow-md p-8 flex flex-col justify-center items-center text-center max-w-md mx-auto">
+    <img src="images/success.png" alt="Success" class="w-12 h-12 mb-4">
+    <h1 class="text-green-700 font-extrabold text-2xl">SUCCESS</h1>
+    <p class="text-gray-700 font-semibold mt-2">Thank you for Booking Our Bus Seats.<br>
       We are working hard to find the best service and deals for you.</p>
-    <span class="mt-2">
-      Shortly you will find a confirmation in your email
-    </span>
-    <button onclick="hideModal()" class="btn btn-success bg-green-700 w-[300px] h-[55px] mt-6 rounded-3xl text-white">Continue</button>
+    <span class="mt-2 text-gray-500">Shortly you will find a confirmation in your email.</span>
+    <button onclick="hideModal()" class="btn bg-green-700 w-full h-12 mt-6 rounded-3xl text-white">Continue</button>
   </div>
 </section>
+
 
 <!-- Terms and Conditions Links -->
             <div class="mt-4 flex justify-between text-sm text-gray-500">
